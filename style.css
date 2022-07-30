@@ -1,0 +1,73 @@
+:root {
+  --background-main: hsl(0, 0%, 14%);
+  --background-box: hsl(0, 0%, 30%);
+  --color-main: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-main);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-block: 4em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: var(--color-main);
+  margin-bottom: 2em;
+}
+
+.basic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  height: 150px;
+  background-color: var(--background-box);
+  margin-bottom: 2em;
+  border-radius: 0.5em;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.4);
+}
+
+.box {
+  transform: translateX(400%);
+  transition: transform 0.5s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.active {
+  transform: translateX(0);
+}
+
+.box h2,
+.parent h2 {
+  color: var(--color-main);
+  font-size: 30px;
+  padding-inline: 1em;
+}
+
+.parent {
+  transform: scale(0.1);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.parent.active {
+  transform: scale(1);
+  opacity: 1;
+}
