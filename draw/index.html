@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Draw-Boxes</title>
+  </head>
+  <body>
+    <div class="pick__color">
+      <p>Create your list of colors:</p>
+      <div class="input__container">
+        <input type="color" name="color" id="getColor" />
+        <input
+          type="text"
+          name="colorName"
+          id="showColor"
+          placeholder="#rrggbb"
+        />
+      </div>
+      <div class="btns">
+        <button id="submit">Apply</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div id="selected__color">
+        <select id="selectMenu">
+          <option value="">Select One</option>
+        </select>
+      </div>
+    </div>
+    <div class="draw__reset">
+      <button id="clear__draw">Clear Draw!</button>
+      <p class="info">
+        Press the <kbd>shiftKey</kbd> and <kbd>hover</kbd> over the boxes to
+        start drawing.
+      </p>
+      <p class="info">
+        Press the <kbd>ctrlKey</kbd> and <kbd>hover</kbd> over the boxes to
+        start deleting.
+      </p>
+    </div>
+    <div class="container" id="draw__box"></div>
+  </body>
+</html>

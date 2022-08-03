@@ -93,7 +93,8 @@ nav {
   max-width: 850px;
   height: 5em;
   border-radius: 0.5em;
-  transition: transform 0.5s ease-in, width 0.5s 0.6s linear;
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    width 0.5s 0.6s linear;
   z-index: 100;
 }
 

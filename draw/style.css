@@ -1,0 +1,211 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.pick__color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.pick__color p {
+  font-family: inherit;
+  color: lightseagreen;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.input__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.pick__color input[type="text"] {
+  border: 1px solid rgba(32, 178, 170, 0.2);
+  outline: none;
+  padding: 0.3em 0.5em;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0.2em;
+  margin-left: 0.5em;
+}
+
+.pick__color input[type="text"]:focus,
+.pick__color input[type="text"]:hover {
+  border: 1px solid lightseagreen;
+}
+
+.btns button[id="submit"] {
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding: 0.4em 1em;
+  background-color: rgba(32, 178, 170, 0.2);
+  border: 1px solid lightseagreen;
+  color: #fff;
+  border-radius: 0.2em;
+  cursor: pointer;
+  margin: 0.5em 0.5em 1em;
+}
+
+.btns button:hover,
+.btns button:focus {
+  background-color: rgba(32, 178, 170, 0.5);
+  outline: none;
+}
+
+.btns button[id="reset"],
+#clear__draw {
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding: 0.4em 1em;
+  background-color: rgba(158, 4, 15, 0.2);
+  border: 1px solid rgba(158, 4, 14);
+  color: #fff;
+  border-radius: 0.2em;
+  cursor: pointer;
+  margin: 0.5em 0.5em 1em;
+}
+
+.btns button[id="reset"]:hover,
+.btns button[id="reset"]:focus,
+#clear__draw:hover,
+#clear__draw:focus {
+  background-color: rgba(158, 4, 14, 0.5);
+  outline: none;
+}
+
+button:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.draw__reset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 600px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.info {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.info kbd {
+  color: lightgreen;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  cursor: cell;
+}
+
+.pixel {
+  background-color: #1d1d1d;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  -webkit-transition: 2s ease;
+  -o-transition: 2s ease;
+  transition: 2s ease;
+}
+
+.pixel:hover {
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+#selected__color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#selected__color select {
+  padding: 0.5em 1em;
+  outline: none;
+  border: 1px solid rgba(32, 178, 170, 0.2);
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0.3em;
+}
+
+#selected__color select:focus,
+#selected__color select:hover {
+  border: 1px solid lightseagreen;
+  outline: none;
+}
