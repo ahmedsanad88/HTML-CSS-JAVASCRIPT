@@ -13,13 +13,15 @@ Four simple projects to be included in your next website:
 
 # Demo-Preview
 
-<img width="1280" alt="project-banner" src="https://drive.google.com/file/d/1JuKdtBgO_FVTng0lmuu01kcT7QC4SEos/view?usp=sharing">
 
-<img width="1280" alt="project-banner" src="https://photos.app.goo.gl/LGq6Y7sVimd2TCi86">
+<img width="1000" alt="animated nav-bar" src="https://user-images.githubusercontent.com/57454543/182757046-3ccdcd82-f5cf-4ed8-ab73-3ebbb3af5128.png">
 
-<img width="1280" alt="project-banner" src="https://photos.app.goo.gl/fmScJ3oABjazPKuB8">
+<img width="1000" alt="drawing app" src="https://user-images.githubusercontent.com/57454543/182757084-46750fd0-11d6-41af-8403-cf07bd43ee69.png">
 
-<img width="1280" alt="project-banner" src="https://photos.app.goo.gl/tR3MBqaXLuXjNJHN8">
+<img width="1000" alt="input-placeholder-animation" src="https://user-images.githubusercontent.com/57454543/182757102-5bba6cf3-252b-46fa-9926-c4283352dbb8.png">
+
+<img width="1000" alt="scroll-animation (1)" src="https://user-images.githubusercontent.com/57454543/182757176-87efd985-a214-4ff7-b150-06d3b7e3bcfc.png">
+
 
 # Table of contents
 
