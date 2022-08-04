@@ -13,13 +13,13 @@ Four simple projects to be included in your next website:
 
 # Demo-Preview
 
-![animated-Input-Placeholder](https://photos.app.goo.gl/dgVsPXXLRkKex5XUA)
+<img width="1280" alt="project-banner" src="https://photos.app.goo.gl/dgVsPXXLRkKex5XUA">
 
-![animated-Navbar](https://photos.app.goo.gl/LGq6Y7sVimd2TCi86)
+<img width="1280" alt="project-banner" src="https://photos.app.goo.gl/LGq6Y7sVimd2TCi86">
 
-![drawing-App](https://photos.app.goo.gl/fmScJ3oABjazPKuB8)
+<img width="1280" alt="project-banner" src="https://photos.app.goo.gl/fmScJ3oABjazPKuB8">
 
-![animated-on-the-scroll-app](https://photos.app.goo.gl/tR3MBqaXLuXjNJHN8)
+<img width="1280" alt="project-banner" src="https://photos.app.goo.gl/tR3MBqaXLuXjNJHN8">
 
 # Table of contents
 
