@@ -1,4 +1,4 @@
-# Multiple Projects using ==> HTML, CSS, JAVASCRIPT.
+# Multiple Projects using ==> HTML, CSS, JAVASCRIPT. 👨🏽‍💻
 
 Four simple projects to be included in your next website:
 
@@ -11,7 +11,7 @@ Four simple projects to be included in your next website:
 4. Drawing app:
    > Simple draw app including interesting features like color picker, delete the drawing.
 
-# Demo-Preview
+# Demo-Preview 👨🏽‍🏫
 
 <img width="1280" alt="project-banner" src="https://drive.google.com/file/d/1JuKdtBgO_FVTng0lmuu01kcT7QC4SEos/view?usp=sharing">
 
@@ -21,21 +21,21 @@ Four simple projects to be included in your next website:
 
 <img width="1280" alt="project-banner" src="https://photos.app.goo.gl/tR3MBqaXLuXjNJHN8">
 
-# Table of contents
+# Table of contents 🗂
 
-- [Multiple Projects using ==> HTML, CSS, JAVASCRIPT.](#multiple-projects-using--html-css-javascript)
-- [Demo-Preview](#demo-preview)
-- [Table of contents](#table-of-contents)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Development](#development)
-- [Contribute](#contribute)
+- [Multiple Projects using ==> HTML, CSS, JAVASCRIPT. 👨🏽‍💻](#multiple-projects-using--html-css-javascript-)
+- [Demo-Preview 👨🏽‍🏫](#demo-preview-)
+- [Table of contents 🗂](#table-of-contents-)
+- [Installation 🛠](#installation-)
+- [Usage 📝](#usage-)
+- [Development 💻](#development-)
+- [Contribute 👍🏼](#contribute-)
     - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
       - [Nothing till now --> 🥳](#nothing-till-now----)
 - [License](#license)
-- [Author](#author)
+- [Author 💡](#author-)
 
-# Installation
+# Installation 🛠
 
 [(Back to top)](#table-of-contents)
 
@@ -43,17 +43,17 @@ Four simple projects to be included in your next website:
 
 `git clone https://github.com/navendu-pottekkat/nsfw-filter.git`
 
-# Usage
+# Usage 📝
 
 [(Back to top)](#table-of-contents)
 
-# Development
+# Development 💻
 
 > Every project has separate HTML, CSS and JAVASCRIPT file.
 
 [(Back to top)](#table-of-contents)
 
-# Contribute
+# Contribute 👍🏼
 
 > Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -73,7 +73,7 @@ Four simple projects to be included in your next website:
 
 [(Back to top)](#table-of-contents)
 
-# Author
+# Author 💡
 
 `Ahmed Sanad`
 
