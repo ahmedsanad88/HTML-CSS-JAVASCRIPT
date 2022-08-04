@@ -13,7 +13,7 @@ Four simple projects to be included in your next website:
 
 # Demo-Preview
 
-<img width="1280" alt="project-banner" src="https://photos.app.goo.gl/dgVsPXXLRkKex5XUA">
+<img width="1280" alt="project-banner" src="https://drive.google.com/file/d/1JuKdtBgO_FVTng0lmuu01kcT7QC4SEos/view?usp=sharing">
 
 <img width="1280" alt="project-banner" src="https://photos.app.goo.gl/LGq6Y7sVimd2TCi86">
 
