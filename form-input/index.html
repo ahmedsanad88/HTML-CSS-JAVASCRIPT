@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
     <title>Animate the form label</title>
   </head>
   <body>
@@ -13,12 +19,26 @@
       <h1>Welcome Back</h1>
       <form>
         <div class="form__control">
-          <input type="email" required />
+          <input
+            type="email"
+            required
+            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+            placeholder="email"
+          />
           <label>Email</label>
         </div>
         <div class="form__control">
-          <input type="password" required />
+          <input
+            type="password"
+            required
+            placeholder="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          />
           <label>Password</label>
+          <p>
+            Must contain at least one number and one uppercase and lowercase
+            letter, and at least 8 or more characters
+          </p>
         </div>
 
         <button class="submit__btn">Login</button>

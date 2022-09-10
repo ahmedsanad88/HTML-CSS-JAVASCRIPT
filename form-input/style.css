@@ -1,9 +1,15 @@
+:root {
+  --success: #60d394;
+  --failed: #ee6055;
+  --normal: #ffd97d;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: rgb(30, 30, 30);
   color: #fff;
   display: flex;
@@ -12,13 +18,21 @@ body {
   align-items: center;
   margin: 0;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
   background-color: rgba(0, 255, 255, 0.4);
   padding: 3em 5em;
   border-radius: 0.5em;
+  max-width: 700px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 2em;
+    margin: 2em;
+  }
 }
 
 .container h1 {
@@ -29,7 +43,11 @@ body {
 .form__control {
   margin-bottom: 2em;
   position: relative;
-  max-width: 700px;
+}
+
+.form__control p {
+  font-size: 0.8rem;
+  color: lightgray;
 }
 
 .form__control input {
@@ -45,17 +63,40 @@ body {
   padding: 0.8em 1em;
 }
 
-.form__control input:focus,
-.form__control input:active,
-.form__control input:valid {
-  border-bottom: 2px solid lightgreen;
+.form__control input::placeholder {
+  color: transparent;
+}
+
+.form__control input:invalid {
+  border-bottom: 2px solid var(--failed);
   outline: none;
+  animation: shaker 1s 1 linear alternate;
+}
+
+.form__control input:focus,
+.form__control input:active {
+  border-bottom: 2px solid var(--normal);
+  outline: none;
+  animation: none;
+}
+
+.form__control input:valid {
+  border-bottom: 2px solid var(--success);
+  outline: none;
+  animation: none;
+}
+
+.form__control input:placeholder-shown {
+  border-bottom: 2px solid var(--normal);
+  outline: none;
+  animation: none;
 }
 
 .form__control label {
   position: absolute;
   top: 1em;
   left: 0;
+  pointer-events: none;
 }
 
 .form__control label span {
@@ -66,11 +107,28 @@ body {
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.form__control input:focus + label span,
-.form__control input:valid + label span,
-.form__control input:active + label span {
-  color: lightgreen;
+.form__control input:invalid + label span {
+  color: var(--failed);
   transform: translateY(-30px);
+  opacity: 1;
+}
+
+.form__control input:focus + label span,
+.form__control input:active + label span {
+  color: var(--normal);
+  transform: translateY(-30px);
+  opacity: 1;
+}
+
+.form__control input:valid + label span {
+  color: var(--success);
+  transform: translateY(-30px);
+  opacity: 1;
+}
+
+.form__control input:placeholder-shown:not(:focus) + label span {
+  color: var(--normal);
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -116,4 +174,24 @@ body {
 .register__text a {
   color: lightgreen;
   text-decoration: none;
+}
+
+@keyframes shaker {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-4px);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(4px);
+  }
 }
