@@ -41,7 +41,7 @@ Four simple projects to be included in your next website:
 
 > No need to install any. 🎉
 
-`git clone https://github.com/navendu-pottekkat/nsfw-filter.git`
+`git clone https://github.com/ahmedsanad88/HTML-CSS-JAVASCRIPT.git`
 
 # Usage 📝
 
