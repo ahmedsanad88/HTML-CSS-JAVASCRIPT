@@ -6,12 +6,15 @@ const nav = document.getElementById("navMove");
 const listItems = document.querySelectorAll("li");
 
 open.addEventListener("click", function () {
+  // listItems.forEach((item) => (item.style.opacity = 0));
   this.classList.add("animate__open");
   close.classList.remove("animate__close");
   nav.classList.add("nav__move");
   nav.style.width = "50%";
   setTimeout(() => {
-    listItems.forEach((item) => (item.style.opacity = 1));
+    if (nav.style.width === "50%") {
+      listItems.forEach((item) => (item.style.opacity = 1));
+    }
   }, 1000);
 });
 
@@ -33,7 +36,10 @@ listItems.forEach((item) => {
 
 function handleActiveSection(e) {
   listItems.forEach((item) => item.classList.remove("active"));
-  e.target.classList.add("active");
+  if (e.target.children.length === 0) {
+    e.target.parentElement.classList.add("active");
+  } else {
+    e.target.classList.add("active");
+  }
 }
-
 // Can call the same function ->  handleActiveSection to keep the reference to selected section.
